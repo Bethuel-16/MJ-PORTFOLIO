@@ -315,6 +315,17 @@ nav {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .hero-right {
+    display: flex; /* Makes it visible on phones */
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .hero-avatar-wrap {
+    width: 280px; /* Scales down for smaller screens */
+    height: 320px;
+  }
+}
 
 .hero-avatar-wrap {
   position: relative;
