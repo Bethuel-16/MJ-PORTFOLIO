@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethuel Majanga — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#hero" class="nav-logo">BM.dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">Bethuel<br /><span>Majanga.</span></h1>
+        <p class="hero-subtitle">
+          A passionate developer crafting elegant digital experiences — blending
+          thoughtful design with clean, purposeful code.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work ↓</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-avatar-wrap">
+        
+          <div class="avatar-accent-ring"></div>
+            <div class="hero-avatar-frame">
+              <img src="majanga.jpg" alt="Profile Photo" class="avatar-image">
+            </div>
+          <div class="avatar-tag avatar-tag-1">const skills = [...]</div>
+          <div class="avatar-tag avatar-tag-2">// Building the web ✦</div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="reveal">
+        <span class="section-label"> 01 — About</span>
+        <h2 class="section-title">Who I am, what<br /><em>I care about</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-counter-grid">
+            <div class="counter-cell">
+              <span class="counter-num">3+</span>
+              <span class="counter-label">Years Experience</span>
+            </div>
+            <div class="counter-cell">
+              <span class="counter-num">10+</span>
+              <span class="counter-label">Repositories</span>
+            </div>
+            <div class="counter-cell">
+              <span class="counter-num">100%</span>
+              <span class="counter-label">UI/UX Focus</span>
+            </div>
+            <div class="counter-cell">
+              <span class="counter-num">~</span>
+              <span class="counter-label">Continous Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <div class="about-text">
+            <p>
+              Hi! I'm <span class="highlight">Bethuel Majanga</span>, a software
+              developer based in <span class="highlight">Nairobi, Kenya</span>.
+              I love building things that live on the internet — from
+              pixel-perfect UIs to robust frontend systems.
+            </p>
+            <p>
+              My approach combines
+              <span class="highlight">technical precision</span> with a strong
+              eye for design. I believe great software isn't just functional —
+              it should feel delightful to use.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new tech and
+              contributing to open source.
+            </p>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">TailwindCSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="reveal">
+        <span class="section-label"> 02 — Work</span>
+        <h2 class="section-title">Selected<br /><em>projects</em></h2>
+      </div>
+
+      <div class="projects-grid">
+        <a href="#" class="project-card featured reveal">
+          <div class="project-link-icon">↗</div>
+          <div>
+            <p class="project-number">Project 01 — Featured</p>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">
+              A full-stack marketplace with real-time inventory, Mpesa/Stripe
+              payments, dynamic dashboards, and a custom admin CMS. Handles
+              10,000+ products and 500+ daily transactions.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">PostgreSQL</span>
+              <span class="stack-tag">Stripe</span>
+              <span class="stack-tag">Redis</span>
+              <span class="stack-tag">AWS S3</span>
+            </div>
+          </div>
+          <div class="project-mock">&lt;/&gt; E-Commerce Dashboard</div>
+        </a>
+
+        <a href="#" class="project-card reveal">
+          <p class="project-number">Project 02</p>
+          <div class="project-link-icon">↗</div>
+          <h3 class="project-title">SaaS Analytics Tool</h3>
+          <p class="project-desc">
+            Real-time business intelligence dashboard with interactive charts,
+            PDF export, and role-based access for SMEs across East Africa.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">D3.js</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">MongoDB</span>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal">
+          <p class="project-number">Project 03</p>
+          <div class="project-link-icon">↗</div>
+          <h3 class="project-title">Mobile Finance App</h3>
+          <p class="project-desc">
+            Cross-platform fintech app with budget tracking, savings goals, and
+            Mpesa integration — built for the Kenyan market.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React Native</span>
+            <span class="stack-tag">Expo</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">Mpesa API</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="reveal">
+        <span class="section-label"> 03 — Experience</span>
+        <h2 class="section-title">Where I've<br /><em>worked</em></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <p class="timeline-date">2024 — Present</p>
+          <h3 class="timeline-role">Freelance Developer/UI/UX Designer</h3>
+          <p class="timeline-company">Farreach Agencies · Nairobi, Kenya</p>
+          <ul class="timeline-desc">
+            <li>
+              Designed and prototyped high-fidelity web interfaces using Figma
+            </li>
+            <li>
+              Built responsive web applications focusing on clean, purposeful code.            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <p class="timeline-date">2024 — Present</p>
+          <h3 class="timeline-role">Software Engineering Student (USIU-Africa)</h3>
+          <ul class="timeline-desc">
+           <li>
+              Developed a Helpdesk Ticketing System as part of a System Analysis project.
+            <li>
+              Mastered core networking concepts including LAN infrastructure and router configuration.
+            </li>
+            <li>
+              Mastered different languages such as python and c++ and built projects such as a tic-tac-toe game.
+            </li>
+            <li>
+              Collaborated with designers to translate Figma mockups into
+              pixel-perfect UIs
+            </li>
+            <li>
+             Designed a library management system as part of a school project
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <p class="timeline-date">2023 — Present</p>
+          <h3 class="timeline-role">Aspiring Lead Developer/ UI/UX Designer</h3>
+          <ul class="timeline-desc">
+            <li>Built and maintained personal projects to master HTML, CSS, and JavaScript</li>
+            <li>Designed variety of prototypes for web and mobile applications</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner reveal">
+        <span class="section-label"> 04 — Contact</span>
+        <h2 class="section-title">Let's build<br /><em>something great</em></h2>
+        <p style="color: var(--muted); margin-top: 1rem; font-size: 1rem">
+          Have a project in mind or just want to say hello? My inbox is always
+          open.
+        </p>
+        <a href="mailto:bethuel@example.com" class="contact-email"
+          >bethuelmajangagilmo@gmail.com</a
+        >
+        <div class="social-links">
+          <a
+            href="https://github.com"
+            target="_blank"
+            class="social-link"
+            title="GitHub"
+            >GH</a
+          >
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="social-link"
+            title="LinkedIn"
+            >LI</a
+          >
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="social-link"
+            title="Twitter"
+            >TW</a
+          >
+          <a href="#" class="social-link" title="Resume">CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2026 Bethuel Majanga</span>
+      <span>Designed & Built with ♥ in Nairobi</span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
