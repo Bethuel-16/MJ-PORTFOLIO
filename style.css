@@ -646,10 +646,11 @@ footer {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    z-index: 200;
+    z-index: 1000;
     background: none;
     border: none;
     padding: 6px;
+    position: relative;
   }
 
   .nav-hamburger span {
@@ -667,17 +668,31 @@ footer {
   .nav-links {
     display: none;
     position: fixed;
-    inset: 0;
-    background: rgba(11, 12, 14, 0.98);
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0b0c0e;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    z-index: 99;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
   }
 
   .nav-links.open { display: flex; }
-  .nav-links a { font-size: 1.4rem; letter-spacing: 0.15em; }
+
+  .nav-links a {
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    color: var(--text) !important;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover { color: var(--accent) !important; }
 
   /* HERO */
   #hero {
