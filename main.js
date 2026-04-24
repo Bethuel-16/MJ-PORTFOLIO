@@ -1,7 +1,24 @@
 /* ============================================================
    BETHUEL MAJANGA — Portfolio Scripts
-   main.js
+   mj.js
    ============================================================ */
+
+/* ---- HAMBURGER MENU ---- */
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("open");
+  navMenu.classList.toggle("open");
+});
+
+// Close menu when any nav link is clicked
+document.querySelectorAll(".nav-item").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("open");
+    navMenu.classList.remove("open");
+  });
+});
 
 /* ---- CUSTOM CURSOR ---- */
 document.body.classList.add("js-loaded");
@@ -50,13 +67,9 @@ const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
   let current = "";
-
   sections.forEach((section) => {
-    if (window.scrollY >= section.offsetTop - 200) {
-      current = section.id;
-    }
+    if (window.scrollY >= section.offsetTop - 200) current = section.id;
   });
-
   navLinks.forEach((link) => {
     link.style.color =
       link.getAttribute("href") === "#" + current ? "var(--text)" : "";
